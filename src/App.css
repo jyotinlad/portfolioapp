@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  figure figcaption {
+    width: 100%;
+  }
+}
+
+#page {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
