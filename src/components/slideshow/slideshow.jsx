@@ -25,7 +25,7 @@ export default class Slideshow extends Component {
               <img className="d-block w-100" src={image_2} alt="Second slide" />
               <Carousel.Caption>
                 <h3>A Software Development Professional</h3>
-                <p><a className="slideshow-link" href="#skills" data-nav-section="skills">Skills</a> <a className="slideshow-link" href="https://github.com/jyotinlad" target="_blank" rel="noopener noreferrer">GitHub Projects</a></p>
+                <p><a className="slideshow-link" href="#skills" data-nav-section="skills">Skills</a> <a className="slideshow-link" href="https://github.com/jyotinlad" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
