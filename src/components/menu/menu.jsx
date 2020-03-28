@@ -21,6 +21,7 @@ const Menu = ({ open }) => {
               <ul>
                 <li><a href="#home" data-nav-section="home">Home</a></li>
                 <li><a href="#about" data-nav-section="about">About</a></li>
+                <li><a href="#qualifications" data-nav-section="qualifications">Qualifications</a></li>
                 <li><a href="#skills" data-nav-section="skills">Skills</a></li>
                 <li><a href="#contact" data-nav-section="contact">Contact</a></li>
               </ul>
