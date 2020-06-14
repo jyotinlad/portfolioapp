@@ -25,8 +25,8 @@ export default class Skills extends Component {
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Problem Solving</h3>
-                      <p>A proven track record of designing and implementing solutions primarily in the financial services domain.</p>
+                      <h3>Business Analysis</h3>
+                      <p>A proven track record of analysing business needs to design and implement, solutions primarily in the financial services domain.</p>
                     </div>
                   </div>
                 </div>
@@ -41,7 +41,7 @@ export default class Skills extends Component {
                     </span>
                     <div className="desc">
                       <h3>Business Intelligence</h3>
-                      <p>Experienced in the art of showcasing key business metrics to highlight performance and efficiencies.</p>
+                      <p>Experienced in the art of showcasing key business metrics using tools such as Power BI and Tableau. Together with building Data Warehouses to feed and drive these tools.</p>
                     </div>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ export default class Skills extends Component {
                     </span>
                     <div className="desc">
                       <h3>Agile</h3>
-                      <p>An Agile practioner with many years of experience years using the Scrum and Kanban methodologies.</p>
+                      <p>An Agile practioner with many years of experience years using the Scrum and Kanban methodologies. Being a Scrum Master and Product Owner.</p>
                     </div>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default class Skills extends Component {
                     </span>
                     <div className="desc">
                       <h3>Back-End Development</h3>
-                      <p>Primarily using Python and SQL to create a range of solutions, including API's, Data Warehouses, and ETL processes.</p>
+                      <p>Primarily using Python, Perl and SQL to create a range of solutions, including API's, Data Warehouses, and ETL processes. Utilizing Unit & Integration Tests, as well as Continous Integration / Deployment.</p>
                     </div>
                   </div>
                 </div>
@@ -100,8 +100,8 @@ export default class Skills extends Component {
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Dev Ops</h3>
-                      <p>Actively performing Unit Testing and Continous Integration / Deployment, as well as experience setting up Alerts and Monitors.</p>
+                      <h3>Vendor Management</h3>
+                      <p>Managing the integration and maintainence of third party solutions such as Azure, AWS, NetSuite and DosuSign.</p>
                     </div>
                   </div>
                 </div>
