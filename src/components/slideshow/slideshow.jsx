@@ -4,7 +4,7 @@ import { StyledSlideshow } from "./slideshow.styled";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const image_1 = require("../../public/images/singapore.jpg");
+const image_1 = require("../../public/images/meeting.jpg");
 const image_2 = require("../../public/images/business_intelligence.jpg");
 const image_3 = require("../../public/images/programming.jpg");
 

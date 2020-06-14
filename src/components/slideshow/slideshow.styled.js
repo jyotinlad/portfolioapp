@@ -29,7 +29,7 @@ export const StyledSlideshow = styled.nav`
   .slideshow-link {
     background-color: #e7e7e7;
     font-size: 16px;
-    padding: 14px 40px;
+    padding: 10px 30px;
     border-radius: 12px;
     opacity: 0.6;
   }
