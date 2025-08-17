@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
 
-const aws_logo = require("../public/images/aws-solutions-architect.png");
-const google_leader_logo = require("../public/images/google-cloud-digital-leader.png");
-const google_architect_logo = require("../public/images/google-professional-cloud-architect.png");
-const power_bi_logo = require("../public/images/power_bi_logo.png");
-const microsoft_logo = require("../public/images/microsoft_logo.png");
-const netsuite_logo = require("../public/images/netsuite_logo.png");
+const aws_architect_badge = require("../public/images/badges/aws_solutions_architect.png");
+const google_leader_badge = require("../public/images/badges/google_cloud_digital_leader.png");
+const google_architect_badge = require("../public/images/badges/google_professional_cloud_architect.png");
+const scrum_og_psm_badge = require("../public/images/badges/scrum_org_professional_scrum_master.png");
+const power_bi_badge = require("../public/images/badges/power_bi.png");
+const microsoft_badge = require("../public/images/badges/microsoft.png");
+const netsuite_badge = require("../public/images/badges/netsuite.png");
 
 export default class Qualifications extends Component {
   render() {
@@ -22,12 +23,13 @@ export default class Qualifications extends Component {
                       <span className="heading-meta">Qualifications</span>
                       <h2 className="colorlib-heading">Overview</h2>
                       <Fade right>
-                        <p><img className="qualification_img" src={aws_logo}/>AWS Certified Solutions Architect</p>
-                        <p><img className="qualification_img" src={google_leader_logo}/>Google Cloud Digital Leader</p>
-                        <p><img className="qualification_img" src={google_architect_logo}/>Google Professional Cloud Architect</p>
-                        <p><img className="qualification_img" src={power_bi_logo}/>Power BI - DAX & Data Modeling</p>
-                        <p><img className="qualification_img" src={microsoft_logo}/>Microsoft Office User Specialist</p>
-                        <p><img className="qualification_img" src={netsuite_logo}/>NetSuite - Administrator & Scripting</p>
+                        <p><img className="qualification_img" src={aws_architect_badge}/>AWS Certified Solutions Architect</p>
+                        <p><img className="qualification_img" src={google_leader_badge}/>Google Cloud Digital Leader</p>
+                        <p><img className="qualification_img" src={google_architect_badge}/>Google Professional Cloud Architect</p>
+                        <p><img className="qualification_img" src={scrum_og_psm_badge}/>Scrum.org - Professional Scrum Master</p>
+                        <p><img className="qualification_img" src={power_bi_badge}/>Power BI - DAX & Data Modeling</p>
+                        <p><img className="qualification_img" src={microsoft_badge}/>Microsoft Office User Specialist</p>
+                        <p><img className="qualification_img" src={netsuite_badge}/>NetSuite - Administrator & Scripting</p>
                       </Fade>
                     </div>
                   </div>
