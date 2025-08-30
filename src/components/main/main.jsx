@@ -4,7 +4,6 @@ import { bool } from 'prop-types';
 import About from '../about';
 import Contact from '../contact';
 import Qualifications from '../qualifications';
-import LinkedInProfile from '../linkedin';
 import Slideshow from '../slideshow/slideshow';
 import Skills from '../skills';
 import { StyledMain } from './main.styled';
