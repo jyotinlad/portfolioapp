@@ -3,6 +3,9 @@ import Icon from "../icon";
 
 import Fade from "react-reveal";
 
+// update the selection.json file by selecting icons on the following site and exporting the file
+// https://icomoon.io/app/#/select
+
 export default class Skills extends Component {
   render() {
     return (
@@ -21,12 +24,12 @@ export default class Skills extends Component {
                   <div className="services color-1">
                     <span className="icon">
                       <i>
-                        <Icon color="#444" size={40} icon="lightbulb" />
+                        <Icon color="#ffffffff" size={40} icon="bank" />
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Business Analysis</h3>
-                      <p>A proven track record of analysing business needs to design and implement, solutions primarily in the financial services domain.</p>
+                      <h3>FSI Domain Knowledge</h3>
+                      <p>I offer deep expertise in the Financial Services Industry (FSI), with a focus on core banking systems. My knowledge spans across retail and corporate banking, as well as financial markets. I also stay up to date on emerging areas like crypto / digital assets, being able to speak to a wide range of client needs.</p>
                     </div>
                   </div>
                 </div>
@@ -36,12 +39,12 @@ export default class Skills extends Component {
                   <div className="services color-2">
                     <span className="icon">
                       <i>
-                        <Icon color="#444" size={40} icon="bi-graph" />
+                        <Icon color="#ffffffff" size={40} icon="cogs" />
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Business Intelligence</h3>
-                      <p>Experienced in the art of showcasing key business metrics using tools such as Power BI and Tableau. Together with building Data Warehouses to feed and drive these tools.</p>
+                      <h3>Software Architecture & Engineering</h3>
+                      <p>My skills include designing robust solutions using various architecture design patterns. I am proficient in modern cloud technologies and possess a strong background in software engineering, with hands-on experience in languages like Python and JavaScript. This allows me to effectively bridge the gap between business requirements and technical implementation.</p>
                     </div>
                   </div>
                 </div>
@@ -51,12 +54,12 @@ export default class Skills extends Component {
                   <div className="services color-3">
                     <span className="icon">
                       <i>
-                        <Icon color="#444" size={40} icon="loop" />
+                        <Icon color="#ffffffff" size={40} icon="stack" />
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Agile</h3>
-                      <p>An Agile practioner with many years of experience years using the Scrum and Kanban methodologies. Being a Scrum Master and Product Owner.</p>
+                      <h3>Solution Design & Implementation</h3>
+                      <p>I have extensive experience in the full lifecycle of solution development. With the ability to thoroughly analyse business challenges and applying my problem-solving skills to craft tailored solutions. I conduct detailed business analysis to inform the scoping and solution design, and I'm adept at overseeing the successful implementation of FSI and data solutions.</p>
                     </div>
                   </div>
                 </div>
@@ -66,12 +69,12 @@ export default class Skills extends Component {
                   <div className="services color-4">
                     <span className="icon">
                       <i>
-                        <Icon color="#444" size={40} icon="database" />
+                        <Icon color="#ffffffff" size={40} icon="users" />
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Back-End Development</h3>
-                      <p>Primarily using Python, Perl and SQL to create a range of solutions, including API's, Data Warehouses, and ETL processes. Utilizing Unit & Integration Tests, as well as Continous Integration / Deployment.</p>
+                      <h3>Client & Partner Relationship Management</h3>
+                      <p>I excel at building and nurturing strong relationships with clients and partners. My skills include clear and persuasive communication, delivering compelling presentations and technical demos, and leading interactive workshops to ensure all stakeholders are aligned and engaged.</p>
                     </div>
                   </div>
                 </div>
@@ -81,12 +84,12 @@ export default class Skills extends Component {
                   <div className="services color-5">
                     <span className="icon">
                       <i>
-                        <Icon color="#444" size={40} icon="sphere" />
+                        <Icon color="#ffffffff" size={40} icon="user-check" />
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Web Development</h3>
-                      <p>Knowledge in building websites using JavaScript, React, HTML and CSS.</p>
+                      <h3>Project Management</h3>
+                      <p>I am skilled in coordinating complex projects, ensuring smooth execution from start to finish. My experience in working within an agile framework allows me to collaborate effectively with cross-functional teams and adapt to changing requirements, fostering a spirit of teamwork and shared success.</p>
                     </div>
                   </div>
                 </div>
@@ -96,12 +99,12 @@ export default class Skills extends Component {
                   <div className="services color-6">
                     <span className="icon">
                       <i>
-                        <Icon color="#444" size={40} icon="cogs" />
+                        <Icon color="#ffffffff" size={40} icon="bi-graph" />
                       </i>
                     </span>
                     <div className="desc">
-                      <h3>Vendor Management</h3>
-                      <p>Managing the integration and maintainence of third party solutions such as Azure, AWS, NetSuite and DosuSign.</p>
+                      <h3>Data Management & Business Intelligence</h3>
+                      <p>I have helped organizations harness the power of their data. Being proficient in the principles of managing data and leveraging business intelligence tools to transform raw information into actionable insights. Helping clients and organisations to make informed decisions and optimize their operations.</p>
                     </div>
                   </div>
                 </div>
