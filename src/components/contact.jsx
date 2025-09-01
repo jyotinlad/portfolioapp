@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Icon from "../icon";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import Fade from "react-reveal";
 
 export default class Contact extends Component {
@@ -35,17 +34,36 @@ export default class Contact extends Component {
       message: this.state.message
     };
 
-    console.log("about to send");
-    emailjs.send("mailjet", "portfolio_contact", email_params, "user_o9dNiLJCzkIThqNzYK9yZ").then(
-      result => {
-        console.log(result.text);
-      },
-      error => {
-        console.log(error.text);
-      }
-    );
+    // console.log("about to send");
+    // emailjs.send("mailjet", "portfolio_contact", email_params, "user_o9dNiLJCzkIThqNzYK9yZ").then(
+    //   result => {
+    //     console.log(result.text);
+    //   },
+    //   error => {
+    //     console.log(error.text);
+    //   }
+    // );
 
-    alert("Message Sent");
+    // secret key eb5ff129f209951fac574445acfa89ee
+    // public key 97fe24a7f9ee2a97a39929c9feaa4353
+
+    emailjs
+      .sendForm(
+        'service_1fp98yx', 
+        'template_gyt3wxg', 
+        email_params, 
+        '97fe24a7f9ee2a97a39929c9feaa4353'
+      )
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result.text);
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('Failed to send the message, please try again. ' + error.text);
+        }
+      );
 
     event.preventDefault();
   }
@@ -63,36 +81,6 @@ export default class Contact extends Component {
             </div>
             <div className="row">
               <Fade left>
-                <div className="col-md-5">
-                  <div className="colorlib-feature colorlib-feature-sm animate-box">
-                    <div className="colorlib-icon">
-                      <i>
-                        <Icon color="#2c98f0" size={40} icon="mail" />
-                      </i>
-                    </div>
-                    <div className="colorlib-text">
-                      <p>
-                        <a href="#">j.lad.uk@gmail.com</a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="colorlib-feature colorlib-feature-sm animate-box">
-                    <div className="colorlib-icon">
-                      <i>
-                        <Icon color="#2c98f0" size={40} icon="phone" />
-                      </i>
-                    </div>
-                    <div className="colorlib-text">
-                      <p>
-                        <a href="tel://">SG: (+65) 88113304</a>
-                        <br />
-                        <a href="tel://">UK: (+44) 7812338464</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Fade>
-              <Fade right>
                 <div className="col-md-7 col-md-push-1">
                   <div className="row">
                     <div className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box">

@@ -27,9 +27,6 @@ const Main = ({ open }) => {
         <ScrollIntoView selector="#contact" smooth="true">
           <Contact></Contact>
         </ScrollIntoView>
-        {/* <ScrollIntoView selector="#contact" smooth="true">
-          <LinkedInProfile></LinkedInProfile>
-        </ScrollIntoView> */}
       </div>
     </StyledMain>
   )
