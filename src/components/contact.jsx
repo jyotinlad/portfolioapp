@@ -29,30 +29,17 @@ export default class Contact extends Component {
     console.log("submitted: " + this.state.name + " " + this.state.email + " " + this.state.message);
 
     let email_params = {
-      user_name: this.state.name,
-      user_email: this.state.email,
+      full_name: this.state.name,
+      contact_email: this.state.email,
       message: this.state.message
     };
 
-    // console.log("about to send");
-    // emailjs.send("mailjet", "portfolio_contact", email_params, "user_o9dNiLJCzkIThqNzYK9yZ").then(
-    //   result => {
-    //     console.log(result.text);
-    //   },
-    //   error => {
-    //     console.log(error.text);
-    //   }
-    // );
-
-    // secret key eb5ff129f209951fac574445acfa89ee
-    // public key 97fe24a7f9ee2a97a39929c9feaa4353
-
     emailjs
-      .sendForm(
+      .send(
         'service_1fp98yx', 
         'template_gyt3wxg', 
         email_params, 
-        '97fe24a7f9ee2a97a39929c9feaa4353'
+        { publicKey: 'MiScIH-zd6f5TQdJW' }
       )
       .then(
         (result) => {
@@ -61,7 +48,7 @@ export default class Contact extends Component {
         },
         (error) => {
           console.log('FAILED...', error.text);
-          alert('Failed to send the message, please try again. ' + error.text);
+          alert('Failed to send the message, please try again. ' + error);
         }
       );
 
@@ -86,10 +73,10 @@ export default class Contact extends Component {
                     <div className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box">
                       <form onSubmit={this.handleSubmit}>
                         <div className="form-group">
-                          <input name="name" type="text" className="form-control" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
+                          <input name="name" id="name" type="text" className="form-control" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
                         </div>
                         <div className="form-group">
-                          <input name="email" type="email" className="form-control" placeholder="Email" required value={this.state.email} onChange={this.handleInputChange} />
+                          <input name="email" id="email" type="email" className="form-control" placeholder="Email" required value={this.state.email} onChange={this.handleInputChange} />
                         </div>
                         <div className="form-group">
                           <textarea
@@ -99,8 +86,7 @@ export default class Contact extends Component {
                             rows="7"
                             className="form-control"
                             placeholder="Message"
-                            required
-                            value={this.state.message}
+                            required value={this.state.message}
                             onChange={this.handleInputChange}
                           ></textarea>
                         </div>
