@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Icon from "../icon";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import Fade from "react-reveal";
 
 export default class Contact extends Component {
@@ -30,22 +30,28 @@ export default class Contact extends Component {
     console.log("submitted: " + this.state.name + " " + this.state.email + " " + this.state.message);
 
     let email_params = {
-      user_name: this.state.name,
-      user_email: this.state.email,
+      full_name: this.state.name,
+      contact_email: this.state.email,
       message: this.state.message
     };
 
-    console.log("about to send");
-    emailjs.send("mailjet", "portfolio_contact", email_params, "user_o9dNiLJCzkIThqNzYK9yZ").then(
-      result => {
-        console.log(result.text);
-      },
-      error => {
-        console.log(error.text);
-      }
-    );
-
-    alert("Message Sent");
+    emailjs
+      .send(
+        'service_1fp98yx', 
+        'template_gyt3wxg', 
+        email_params, 
+        { publicKey: 'MiScIH-zd6f5TQdJW' }
+      )
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result.text);
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('Failed to send the message, please try again. ' + error);
+        }
+      );
 
     event.preventDefault();
   }
@@ -67,26 +73,12 @@ export default class Contact extends Component {
                   <div className="colorlib-feature colorlib-feature-sm animate-box">
                     <div className="colorlib-icon">
                       <i>
-                        <Icon color="#2c98f0" size={40} icon="mail" />
+                        <Icon color="#2c98f0" size={40} icon="linkedin" />
                       </i>
                     </div>
                     <div className="colorlib-text">
                       <p>
-                        <a href="#">j.lad.uk@gmail.com</a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="colorlib-feature colorlib-feature-sm animate-box">
-                    <div className="colorlib-icon">
-                      <i>
-                        <Icon color="#2c98f0" size={40} icon="phone" />
-                      </i>
-                    </div>
-                    <div className="colorlib-text">
-                      <p>
-                        <a href="tel://">SG: (+65) 88113304</a>
-                        <br />
-                        <a href="tel://">UK: (+44) 7812338464</a>
+                        <a href="https://www.linkedin.com/in/jyotinlad/">Jyotin Lad</a>
                       </p>
                     </div>
                   </div>
