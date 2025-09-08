@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Icon from "../icon";
 import emailjs from '@emailjs/browser';
 import Fade from "react-reveal";
 
@@ -68,15 +69,31 @@ export default class Contact extends Component {
             </div>
             <div className="row">
               <Fade left>
+                <div className="col-md-5">
+                  <div className="colorlib-feature colorlib-feature-sm animate-box">
+                    <div className="colorlib-icon">
+                      <i>
+                        <Icon color="#2c98f0" size={40} icon="linkedin" />
+                      </i>
+                    </div>
+                    <div className="colorlib-text">
+                      <p>
+                        <a href="https://www.linkedin.com/in/jyotinlad/">Jyotin Lad</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+              <Fade right>
                 <div className="col-md-7 col-md-push-1">
                   <div className="row">
                     <div className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box">
                       <form onSubmit={this.handleSubmit}>
                         <div className="form-group">
-                          <input name="name" id="name" type="text" className="form-control" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
+                          <input name="name" type="text" className="form-control" placeholder="Name" required value={this.state.name} onChange={this.handleInputChange} />
                         </div>
                         <div className="form-group">
-                          <input name="email" id="email" type="email" className="form-control" placeholder="Email" required value={this.state.email} onChange={this.handleInputChange} />
+                          <input name="email" type="email" className="form-control" placeholder="Email" required value={this.state.email} onChange={this.handleInputChange} />
                         </div>
                         <div className="form-group">
                           <textarea
@@ -86,7 +103,8 @@ export default class Contact extends Component {
                             rows="7"
                             className="form-control"
                             placeholder="Message"
-                            required value={this.state.message}
+                            required
+                            value={this.state.message}
                             onChange={this.handleInputChange}
                           ></textarea>
                         </div>
