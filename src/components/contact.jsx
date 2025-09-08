@@ -37,7 +37,7 @@ export default class Contact extends Component {
 
     emailjs
       .send(
-        'service_1fp98yx', 
+        'service_xn5mmdn', 
         'template_gyt3wxg', 
         email_params, 
         { publicKey: 'MiScIH-zd6f5TQdJW' }
