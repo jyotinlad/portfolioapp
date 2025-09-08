@@ -28,9 +28,9 @@ export const StyledSlideshow = styled.nav`
 
   .slideshow-link {
     background-color: #e7e7e7;
-    font-size: 16px;
-    padding: 10px 30px;
+    font-size: 14px;
+    padding: 10px 20px;
     border-radius: 12px;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 `;
