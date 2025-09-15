@@ -23,13 +23,13 @@ export default class Qualifications extends Component {
                       <span className="heading-meta">Qualifications</span>
                       <h2 className="colorlib-heading">Overview</h2>
                       <Fade right>
-                        <p><img className="qualification_img" src={aws_architect_badge}/>AWS Certified Solutions Architect</p>
-                        <p><img className="qualification_img" src={google_leader_badge}/>Google Cloud Digital Leader</p>
-                        <p><img className="qualification_img" src={google_architect_badge}/>Google Professional Cloud Architect</p>
-                        <p><img className="qualification_img" src={scrum_og_psm_badge}/>Scrum.org - Professional Scrum Master</p>
-                        <p><img className="qualification_img" src={power_bi_badge}/>Power BI - DAX & Data Modeling</p>
-                        <p><img className="qualification_img" src={microsoft_badge}/>Microsoft Office User Specialist</p>
-                        <p><img className="qualification_img" src={netsuite_badge}/>NetSuite - Administrator & Scripting</p>
+                        <p><img className="qualification_img" alt="" src={aws_architect_badge}/>AWS Certified Solutions Architect</p>
+                        <p><img className="qualification_img" alt="" src={google_leader_badge}/>Google Cloud Digital Leader</p>
+                        <p><img className="qualification_img" alt="" src={google_architect_badge}/>Google Professional Cloud Architect</p>
+                        <p><img className="qualification_img" alt="" src={scrum_og_psm_badge}/>Scrum.org - Professional Scrum Master</p>
+                        <p><img className="qualification_img" alt="" src={power_bi_badge}/>Power BI - DAX & Data Modeling</p>
+                        <p><img className="qualification_img" alt="" src={microsoft_badge}/>Microsoft Office User Specialist</p>
+                        <p><img className="qualification_img" alt="" src={netsuite_badge}/>NetSuite - Administrator & Scripting</p>
                       </Fade>
                     </div>
                   </div>
