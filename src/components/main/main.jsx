@@ -4,6 +4,7 @@ import { bool } from 'prop-types';
 import About from '../about';
 import Contact from '../contact';
 import Qualifications from '../qualifications';
+import Recommendations from '../recommendations/recommendations';
 import Slideshow from '../slideshow/slideshow';
 import Skills from '../skills';
 import { StyledMain } from './main.styled';
@@ -23,6 +24,9 @@ const Main = ({ open }) => {
         </ScrollIntoView>
         <ScrollIntoView selector="#skills" smooth="true">
           <Skills></Skills>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#recommendations" smooth="true">
+          <Recommendations></Recommendations>
         </ScrollIntoView>
         <ScrollIntoView selector="#contact" smooth="true">
           <Contact></Contact>
